@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react';
+import BackgroundMusic from './components/BackgroundMusic';
 import Hero from './components/Hero';
 import TripMap from './components/TripMap';
 import DaySection from './components/DaySection';
@@ -28,6 +29,7 @@ export default function App() {
   const day = STOPS[idx].day;
   return (
     <>
+      <BackgroundMusic />
       <div className="bar"><div ref={bar} /></div>
       <Hero onStart={() => go('day-1')} />
       <main className="story">

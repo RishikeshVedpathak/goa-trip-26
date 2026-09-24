@@ -1,4 +1,4 @@
-# GOA 2026 · scroll-driven road-trip itinerary
+# GOA 2026 · road-trip itinerary
 
 Static React + Vite + TypeScript site. No backend, no API keys.
 

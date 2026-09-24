@@ -37,11 +37,16 @@ button:focus-visible{outline:3px solid #fff;outline-offset:2px}
 .meta{margin:0;opacity:.92}
 .pill{background:#ffffff26;backdrop-filter:blur(8px);padding:.4rem 1rem;border-radius:99px;font-weight:700;margin:.4rem 0}
 .hero button{font:inherit;font-weight:800;background:#fff;color:var(--ink);border:0;padding:.9rem 1.6rem;border-radius:99px;cursor:pointer;box-shadow:0 10px 30px #0004;margin-top:.6rem}
-.hero .road{position:absolute;left:0;right:0;bottom:0;height:150px;background:#111c19;overflow:hidden;z-index:2}
+.hero .road{position:absolute;left:0;right:0;bottom:0;height:70px;background:#111c19;overflow:hidden;z-index:2}
 .dash{position:absolute;top:50%;left:-56px;right:0;height:4px;background:repeating-linear-gradient(90deg,#ffd27a 0 28px,transparent 28px 56px);animation:rd 1.2s linear infinite}
 @keyframes rd{to{transform:translateX(56px)}}
-.hcar{position:absolute;left:50%;top:10px;font-size:6rem;animation:bob .6s ease-in-out infinite alternate}
+.hcar{position:absolute;left:50%;top:-15px;font-size:4rem;animation:bob .6s ease-in-out infinite alternate}
 @keyframes bob{to{transform:translateY(3px)}}
+.background-audio{display:none}
+.audio-toggle{position:fixed;top:1rem;right:1rem;z-index:40;display:inline-flex;align-items:center;gap:.45rem;border:0;border-radius:99px;padding:.65rem .9rem;font:700 .85rem 'Nunito',system-ui,sans-serif;color:#fff;background:#10241fe6;box-shadow:0 8px 24px #10241f33;backdrop-filter:blur(10px);cursor:pointer}
+.audio-toggle:hover{background:#0f4d3a}
+.audio-toggle:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.audio-toggle span:first-child{font-size:1.1rem;line-height:1}
 /* story */
 .story{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:2rem;max-width:1500px;margin:0 auto;padding:0 1.5rem}
 .mapcol{position:sticky;top:0;height:100svh;padding:1.5rem 0}
@@ -97,5 +102,6 @@ nav button.on{background:var(--sun)}
  .beach-landscape{height:clamp(260px,46svh,400px)}
  .beach-palm-left{width:clamp(180px,46vw,250px);height:clamp(280px,48svh,360px)}
  .beach-palm-right{width:clamp(160px,40vw,220px);height:clamp(260px,44svh,330px)}
+ .audio-toggle{top:.75rem;right:.75rem;padding:.55rem .7rem}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.day{opacity:1}html{scroll-behavior:auto}}
