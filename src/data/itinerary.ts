@@ -31,10 +31,10 @@ const mk = (n: number, date: string, title: string, tag: string, color: string, 
 export const DAYS: Day[] = [
   mk(1, 'Friday · 2 October', 'Pune → Candolim', 'The journey begins.', '#ff7a45', [
     ['12:00 AM', '🚗', 'Leave Pune', 'pune', 'Self-drive, four friends'],
-    ['10:30 AM', '🏠', 'Check-in', 'regal', 'Regal Park, Candolim · arrive 10:30–12:30'],
+    ['12:00 PM', '🏠', 'Check-in', 'regal', 'Regal Park, Candolim · arrive 10:30–12:30'],
     ['1:00 PM', '🍴', 'Lunch', 'mikeys', "Mikey's Place"],
     ['2:30 PM', '😴', 'Power nap', 'regal', 'Rest at the Airbnb till 5:00 PM'],
-    ['5:15 PM', '🌅', 'Candolim Beach', 'beach', 'Sunset until 7:30 PM'],
+    ['5:30 PM', '🌅', 'Candolim Beach', 'beach', 'Sunset until 7:30 PM'],
     ['8:30 PM', '🍻', 'Dinner & drinks', 'regal', 'Around Candolim'],
   ]),
   mk(2, 'Saturday · 3 October', 'Temples, Islands & Casino', 'Sacred mornings, island hopping, luck at night.', '#f2b632', [
@@ -58,15 +58,13 @@ export const DAYS: Day[] = [
     ['2:30 PM', '🏰', 'Reis Magos Fort', 'reis'],
     ['4:30 PM', '🏠', 'Airbnb', 'regal', 'Rest & get ready till 7:30 PM'],
     ['8:30 PM', '🍽️', 'Dinner', 'regal'],
-    ['10:00 PM', '🕺', 'Sinq Night Club', 'club'],
+    ['10:00 PM', '🕺', 'Sinq Night Club or Chill out at the beach', 'club'],
     ['Late', '🛏️', 'Overnight', 'regal', 'Regal Park, Candolim'],
   ], '🕺 Last Night In Goa'),
   mk(4, 'Monday · 5 October', 'Goa → Pune', 'Goa, until next time.', '#2bb3a7', [
     ['9:00 AM', '🥞', 'Breakfast', 'regal'],
-    ['10:30 AM', '🏖️', 'Final Candolim Beach visit', 'beach'],
-    ['12:00 PM', '🧳', 'Check-out', 'regal'],
-    ['12:30 PM', '🍴', 'Final Goa lunch', 'regal'],
-    ['2:00 PM', '🚗', 'Start drive to Pune', 'pune', 'The car turns back home'],
+    ['10:00 AM', '🧳', 'Check-out', 'regal'],
+    ['11:00 AM', '🚗', 'Start drive to Pune', 'pune', 'The car turns back home'],
   ], '🚗 Turning back toward Pune'),
 ];
 
