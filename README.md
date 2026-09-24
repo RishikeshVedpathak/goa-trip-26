@@ -32,9 +32,12 @@ rights to (e.g. an OpenStreetMap export with attribution).
 
 ## Deploy to GitHub Pages
 1. Push to a GitHub repo's `main` branch.
-2. Settings → Pages → Source: **GitHub Actions**.
+2. Settings → Pages → Build and deployment → Source: **GitHub Actions**.
 3. `.github/workflows/deploy.yml` builds and publishes `dist/` on every push.
+4. Open the Pages URL shown under Settings → Pages; for a project site it includes the repository name, for example `https://<user>.github.io/<repo>/`.
+
+Do not use the user/organization root URL (`https://<user>.github.io/`) for a project site. If the page shows the source `index.html` or requests `/src/main.tsx`, the Pages source is set to the branch root instead of GitHub Actions; change it back to **GitHub Actions** and rerun the workflow.
 
 ## Base path
-The workflow sets `VITE_BASE=/<repository-name>/` automatically, so renaming the repo just works.
+The workflow reads the Pages base path automatically and configures Vite accordingly.
 Locally: `VITE_BASE=/my-repo/ npm run build`. If unset, the base is `./` (relative), which works on any path.
